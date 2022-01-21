@@ -1,0 +1,175 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background-color: black;
+}
+
+#red {
+  margin-top: -8px;
+  padding: 5px;
+  color: white;
+  background-color: red;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.black {
+  height: 80px;
+  display: flex;
+  margin-top: 10px;
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* .boat {
+          margin-left: 80px;
+          margin-top: 5px;
+          font-size: 50px;
+          color: white;
+          background: black;
+          font-family: "Helvetica Neue";
+          cursor: pointer;
+      } */
+
+.center {
+  justify-content: space-around;
+  display: flex;
+}
+
+select {
+  color: white;
+  background-color: transparent;
+  border: 0px;
+}
+
+.line {
+  width: 2px;
+  height: 30px;
+  cursor: pointer;
+  margin: auto;
+  background-color: red;
+  margin-top: 25px;
+}
+
+.icon {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.topnav {
+  display: flex;
+}
+
+.topnav input[type="text"] {
+  font-size: 17px;
+  border: none;
+  float: right;
+  border-radius: 20px;
+  padding: 10px 10px 10px 0px;
+  margin-top: -10px;
+}
+
+.topnav a:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+#imgDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.line1 {
+  display: flex;
+  background-color: #1c1c1c;
+  height: 100px;
+  justify-content: evenly;
+  justify-content: center;
+  gap: 120px;
+}
+
+.line1 img {
+  margin-top: 30px;
+}
+
+.text {
+  margin-top: 35px;
+  margin-left: 10px;
+  color: white;
+  cursor: text;
+}
+
+.line2 {
+  background-color: #2c2c2c;
+  height: 100px;
+  margin-top: -13px;
+}
+
+#sub:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+#sub {
+  border: 2px solid red;
+  width: 150px;
+  height: 35px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+
+.mainli {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+li {
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+  /* color: transparent; */
+}
+
+a {
+  margin-left: 20px;
+}
+
+.img {
+  cursor: pointer;
+}
+
+#container {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.productDiv {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productDiv img {
+  width: 60%;
+  background-color: grey;
+}

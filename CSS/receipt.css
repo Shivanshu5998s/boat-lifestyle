@@ -1,0 +1,406 @@
+body {
+  background-color: #eee;
+  /* margin: 0px;
+    padding: 0px; */
+}
+.nav {
+  display: grid;
+  /* margin: 0px 200px 0px 200px; */
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-template-areas: "left right";
+  background-color: white;
+  width: 100%;
+}
+.navleft {
+  grid-area: left;
+  margin: 0px 200px 0px 200px;
+}
+.navright {
+  grid-area: right;
+  margin: 0px 200px 0px 200px;
+}
+.navright i {
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  padding: 4px;
+}
+#Container {
+  background-color: #eee;
+  margin: 0px 50px 0px 50px;
+}
+
+.personDetail {
+  border: 1px solid white;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  grid-area: per;
+}
+.header p span,
+.facility p i {
+  color: #8a6;
+}
+.facility p i {
+  margin-right: 5px;
+}
+#form {
+  display: grid;
+  grid-template-rows: 20px 30px 20px 30px 20px 30px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5px;
+
+  grid-template-areas:
+    "l l . . z z . . . . . ."
+    "f f f . s s s . . . . ."
+    "m m m . . . . . . . . ."
+    "c c n n n n n . . . . ."
+    "cb cl cl cl cl cl . . . . . ."
+    "sub . . . . . . . . . . .";
+}
+
+.label_first {
+  grid-area: l;
+  font-weight: bold;
+  font-size: large;
+}
+.label_second {
+  grid-area: z;
+  font-weight: bold;
+  font-size: large;
+}
+#firstname {
+  grid-area: f;
+  font-weight: 300;
+}
+#surname {
+  grid-area: s;
+  font-weight: 300;
+}
+.mob_label {
+  grid-area: m;
+  font-weight: bold;
+}
+#country {
+  grid-area: c;
+}
+#output {
+  grid-area: n;
+}
+#box {
+  grid-area: cb;
+}
+.charge_label {
+  grid-area: cl;
+}
+#submit {
+  grid-area: sub;
+  font-weight: bold;
+  margin-top: 5px;
+  background-color: #8a6;
+  border-radius: 3px;
+}
+/* .userdetail {
+    display: flex;
+    font-weight: bold;
+  }
+  .userdetail div {
+    margin-right: 30px;
+  }
+  .userdetail > div > label {
+    font-size: medium;
+    font-weight: bold;
+  }
+  .userdetail > div > input {
+    padding: 3px;
+    font-size: medium;
+  }
+  .mobile {
+    margin-top: 20px;
+  }
+  .mobile > select {
+    margin-right: 10px;
+    font-weight: bold;
+    padding: 3px;
+    font-size: medium;
+  }
+  .mobile > input {
+    width: 200px;
+    font-weight: bold;
+    padding: 3px;
+    font-size: medium;
+  }
+  .check {
+    margin-top: 10px;
+  } */
+.place {
+  width: 445px;
+  color: #777;
+  background-color: white;
+  grid-area: p;
+}
+#img > img {
+  width: 100%;
+  height: 170px;
+}
+#img {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#img > .imgcontent {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+}
+.rating,
+.note,
+.check_in_out {
+  padding-left: 10px;
+}
+.rating > p > span {
+  font-weight: bolder;
+  color: #444;
+}
+.rating p:nth-child(1) {
+  font-size: large;
+}
+.note {
+  color: #e22;
+}
+.note > span > i {
+  color: #e22;
+}
+.check_in_out {
+  padding-bottom: 5px;
+}
+#locktab {
+  display: flex;
+  grid-area: l;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0px 10px 10px 0px;
+  padding: 15px;
+  font-size: large;
+}
+#locktab a {
+  margin-left: 5px;
+}
+
+.selectedplace {
+  display: grid;
+  grid-template-rows: 15% 65% 20%;
+  grid-template-columns: 60% 25%;
+  grid-template-areas:
+    "l p"
+    "per p"
+    ". p";
+}
+/* payment section*/
+.payment {
+  border: 1px solid white;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 60%;
+  margin-right: 10px;
+}
+.secureInfo {
+  display: flex;
+}
+.secureInfo div {
+  margin-right: 20px;
+}
+.secureInfo div:nth-child(2),
+.secureInfo div:nth-child(3) {
+  color: #8a6;
+}
+/*here i use !important here */
+.fa-check {
+  color: green !important;
+}
+.cardinfo button {
+  border: none;
+}
+.cardinfo button:nth-child(2) {
+  color: #28c;
+  margin-left: 5px;
+}
+.cardicon {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.cardicon i {
+  margin: 5px;
+}
+#cardform {
+  color: #444;
+}
+#cardform > label {
+  color: #444;
+}
+#cardform input {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #777;
+  margin-top: 10px;
+}
+#cardform #cardname,
+#cardform #cardnumber {
+  padding: 5px;
+}
+#expYear,
+#expMonth {
+  margin-bottom: 15px;
+  margin-right: 10px;
+  padding: 5px;
+  font-weight: bold;
+}
+#scode {
+  padding: 5px;
+}
+.priceDetail {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 10px;
+  width: 40%;
+}
+.room_amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tax_amount {
+  display: flex;
+  justify-content: space-between;
+}
+.total_amount {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.details {
+  font-weight: bold;
+}
+.sec2 h3 {
+  padding: 0px 5px;
+  margin: 0%;
+}
+.charge {
+  display: flex;
+}
+.charge > p:nth-child(1) {
+  color: #444;
+}
+.charge > p:nth-child(2) {
+  margin-left: 10px;
+  text-decoration: underline;
+}
+/* paymentinfo flexing */
+.paymentinfo {
+  display: flex;
+}
+/* manageBooking section */
+.manageBooking {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  width: 57.5%;
+}
+
+#final_email,
+.conf_email p {
+  color: #444;
+}
+#final_email label {
+  font-size: large;
+  color: #444;
+}
+#final_inp_email {
+  padding: 5px;
+}
+#box1 {
+  margin-top: 15px;
+}
+.book_info_list li {
+  color: #444;
+}
+#complete {
+  color: #444;
+  width: 57.5%;
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+#complete button {
+  background-color: #fc4;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#complete .protection_security_info {
+  display: flex;
+  margin-top: 10px;
+}
+#complete .protection_security_info p {
+  margin-top: 0px;
+  margin-left: 10px;
+}
+footer {
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px;
+}
+footer div {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer_policy a:nth-child(1) {
+  margin-right: 15px;
+}
+.tell {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: large;
+}
+table,
+th,
+thead,
+tbody,
+td {
+  border: 1px solid black;
+}
+#recpCont {
+  text-align: center;
+  margin-top: 150px;
+  font-family: sans-serif;
+
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  margin: 200px auto;
+  background-color: rgb(193, 208, 224);
+  padding: 20px;
+}
+/* .rectCont1 {
+  }
+   */
+.fa-check-circle {
+  color: green;
+}
+.btn {
+  background-color: rgb(14, 65, 158);
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}

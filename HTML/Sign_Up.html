@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - boAt Lifestyle</title>
+
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0057/8938/4802/files/32x32.png?v=1587196217"
+        type="image/png">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="../CSS/header.css">
+      <link rel="stylesheet" href="../CSS//footer.css">  
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #Main {
+            background-color: white;
+            height: 700px;
+            margin-top: -100px;
+        }
+
+        #log {
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            margin-top: 100px;
+        }
+
+        .logo {
+            font-size: 40px;
+            height: 50px;
+            text-align: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .mailpass {
+            color: black;
+            font-size: 20px;
+        }
+
+        input:hover {
+            border: 2px solid black;
+        }
+
+        .btndiv {
+            background-color: #FF1400;
+            margin: auto;
+            width: 470px;
+            height: 50px;
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+
+        .button {
+            background-color: #FF1400;
+            margin: auto;
+            width: 470px;
+            height: 50px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: -20px;
+        }
+    </style>
+</head>
+
+<div id="header"></div>
+
+<body>
+
+    <div id="Main">
+        <div id="log">
+            <h1 style="text-align: center;">Create Account</h1>
+        </div>
+
+        <div class="logo">
+            <a
+                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1896981220538415&kid_directed_site=0&app_id=1896981220538415&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fclient_id%3D1896981220538415%26state%3D4e98758157d1fb3f529f32f248aada2d%26response_type%3Dcode%26sdk%3Dphp-sdk-5.4.4%26redirect_uri%3Dhttps%253A%252F%252Fsocial-login.oxiapps.com%252Fauth%252Ffacebook%26scope%3Demail%26display%3Dpopup%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D119193d1-387b-4e5a-8bf1-68f03373a2ca%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fsocial-login.oxiapps.com%2Fauth%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D4e98758157d1fb3f529f32f248aada2d%23_%3D_&display=popup&locale=en_GB&pl_dbl=0"><i
+                    class="fab fa-facebook"></i></a>
+            <a
+                href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&redirect_uri=https%3A%2F%2Fsocial-login.oxiapps.com%2Fauth%2Fgoogle&client_id=898543883992-ut65aoh5alu6s7jlcs5hk05htbagjs9n.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&access_type=online&approval_prompt=auto&flowName=GeneralOAuthFlow">
+                <i class="fab fa-google"></i></a>
+        </div>
+
+        <div>
+            <div style="margin: auto; width: 30%;">
+                <p class="mailpass">First Name</p>
+                <input style="width: 450px; height: 40px; margin-top: -20px;" type="text">
+
+                <p class="mailpass">Last Name</p>
+                <input style="width: 450px; height: 40px; margin-top: -20px;" type="text">
+
+                <p class="mailpass">Email</p>
+                <input style="width: 450px; height: 40px; margin-top: -20px;" type="text">
+
+                <p class="mailpass">Password</p>
+                <input style="width: 450px; height: 40px; margin-top: -20px;" type="password" placeholder="">
+                <!-- <a href="https://www.boat-lifestyle.com/account/login"></a> -->
+            </div>
+
+            <div class="btndiv">
+                <a href="./Sign_In.html"><button class="button">create</button></a>
+            </div></a>
+
+            <div style="margin: auto; width: 30%; margin-top: -20px;">
+                <a href="./Sign_In.html"><p>Login with an existing account or return to store</p></a>
+            </div>
+
+            <div style="background-color: black; height: 100px;">
+                <p style="font-size: 25px; color: white; text-align: center; padding-top: 30px;">
+                    India’s No.1 Earwear Audio Brand. India’s No.1 Earwear Audio Brand. India’s No.1
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<div id="footer"></div>
+
+</html>
+<script type="module">
+    import {footer} from "../Components/footer.js"
+    import {header} from "../Components/header.js"
+
+    let header_div = document.getElementById("header")
+    header_div.innerHTML = header();
+    let footer_div = document.getElementById("footer")
+    footer_div.innerHTML = footer();
+</script>
